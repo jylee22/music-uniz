@@ -196,6 +196,13 @@
   .tab .tab-item{
     font-size: 14px;
   }
+  /* main */
+  .main-content{
+    padding-top: 20px;
+  }
+  .swiper {
+    border-radius: 10px;
+  }
   /* album */
   .tab-content{
     overflow: auto;

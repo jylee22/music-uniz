@@ -13,3 +13,15 @@ new Swiper('.main-content .swiper', {
     nextEl: '.swiper-button-next'
   }
 });
+
+// close btn
+const closeBtn = document.querySelector(".close");
+const navEl = document.querySelector(".m-nav");
+const menuBtn = document.querySelector(".menu");
+
+menuBtn.addEventListener("click", function(){
+  navEl.classList.remove("none");
+});
+closeBtn.addEventListener("click", function(){
+  navEl.classList.add("none");
+});

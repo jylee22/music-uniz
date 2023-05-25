@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* detail */
+.detail-content{
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.detail{
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.detail .ticket{
+  margin: auto;
+}
+
+/* login */
+.login-component{
+  display: flex;
+  height: calc(100% - 181px - 160px - 20px);
+}
+.login-content{
+  text-align: center;
+  margin: auto;
+}
+.log-link{
+  margin: 20px;
+}
+.login{
+  width: 300px;
+  margin: auto;
+}
+.login .form-group{
+  margin-bottom: 20px;
+}
+.find{
+  font-size: 14px;
+  font-weight: 500;
+  color: #00CCBF;
+  margin-left: auto;
+}
+.btn-register{
+  width: 300px;
+  margin: auto;
+}
+
+.msg{
+  font-size: 14px;
+  color: #747E7E;
+}
+.error-msg{
+  color: #FF5F5D;
+}

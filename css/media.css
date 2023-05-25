@@ -1,0 +1,270 @@
+@charset "UTF-8";
+
+@media all and (max-width: 1199px){
+  .container{
+    width: 100%;
+  }
+  section{
+    padding: 0 20px;
+  }
+  .top-header, .middle-header{
+    padding: 0 20px;
+  }
+
+  /* main */
+  .main-component {
+    height: auto;
+  }
+  .swiper-slide img {
+    width: 100%;
+  }
+
+  /* album */
+  .album .album-item{
+    width: 180px;
+    height: 180px;
+  }
+  .album-item-hover{
+    width: 180px;
+    height: 180px;
+  }
+
+  /* chart */
+  .chart .chart-item{
+    width: 180px;
+  }
+
+  /* youtube */
+  .youtube-area {
+    width: calc(50% - 10px);
+  }
+  #player, #ytplayer {
+    height: 200px;
+  }
+
+  /* event */
+  .event-item {
+    width: calc(50% - 10px);
+    height: 100%;
+  }
+  .event-item img{
+    width: 100%;
+  }
+
+  /* detail */
+  .detail-content{
+    padding: 20px;
+  }
+  .detail .ticket{
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 1099px){
+  /* album */
+  .album .album-item{
+    width: 160px;
+    height: 160px;
+  }
+  .album-item-hover{
+    width: 160px;
+    height: 160px;
+  }
+
+  /* chart */
+  .chart .chart-item{
+    width: 160px;
+  }
+}
+
+@media all and (max-width: 899px){
+  .m{
+    display: block;
+  }
+  .m-none{
+    display: none;
+  }
+
+  /* header */
+  .user-content{
+    margin-left: auto;
+  }
+
+  /* album */
+  .album .album-item {
+    width: 120px;
+    height: 120px;
+    margin-right: 10px;
+    margin-bottom: 70px;
+  }
+  .album-item-hover {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0,0,0, 0.2);
+  }
+  .album-item .album-item-hover {
+    display: block;
+  }
+  .album-item-hover .album-name {
+    position: absolute;
+    width: 100%;
+    top: 124px;
+    left: 0;
+    text-align: center;
+  }
+  .album-item-hover p {
+    color: #121212;
+    font-size: 13px;
+  }
+  .album-item-hover p:first-child {
+    height: 36px;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .album-item-hover p:last-child {
+    color: #747E7E;
+  }
+  /* chart */
+  .chart .chart-item {
+    display: flex;
+    width: calc(50% - 10px);
+    border: none;
+    padding: 0;
+  }
+  .chart-item img {
+    width: 100px;
+  }
+  .chart-item p{
+    width: 100%;
+  }
+  .chart-name{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+  }
+  .chart-item-hover {
+    background-color: transparent;
+    right: 0;
+    display: flex;
+  }
+  .chart-item-hover .icon-group{
+    display: flex;
+    margin-right: 0;
+  }
+  .chart-item-hover .icon-group i{
+    color: #747E7E;
+  }
+
+  /* footer */
+  .footer-component {
+    height: auto;
+    padding: 20px 0;
+  }
+  .footer-manu{
+    flex-wrap: wrap;
+  }
+  li.footer-item {
+    display: flex;
+  }
+  .footer-item a{
+    font-size: 12px;
+  }
+  .footer-content p{
+    font-size: 12px;
+  }
+  .footer-manu .footer-item::after{
+    border-right: none;
+  }
+}
+
+@media all and (max-width: 799px){
+  .content-header a{
+    font-size: 14px;
+  }
+  .tab .tab-item{
+    font-size: 14px;
+  }
+  /* album */
+  .tab-content{
+    overflow: auto;
+  }
+  .tab-content::-webkit-scrollbar-thumb{
+    background-color: #00CCBF;
+  }
+  .album{
+    width: 1400px;
+  }
+  .album .album-item {
+    margin-right: 20px;
+  }
+  
+  /* chart */
+  .uniz-chart-component .content-header{
+    flex-direction: column;
+  }
+  .uniz-chart-component .content-header .tab{
+    width: 100%;
+    margin-top: 10px;
+  }
+  .uniz-chart-component .content-header .tab .tab-item{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #00CCBF;
+    margin-right: -1px;
+    color: #00CCBF;
+  }
+  .uniz-chart-component .content-header .tab .tab-item:first-child{
+    border-radius: 5px 0 0 5px;
+  }
+  .uniz-chart-component .content-header .tab .tab-item:last-child{
+    border-radius: 0px 5px 5px 0px;
+  }
+  .uniz-chart-component .content-body{
+    overflow: auto;
+  }
+  .chart {
+    flex-wrap: nowrap;
+    width: calc(360px * 10);
+  }
+  .chart .chart-item {
+    width: 100%;
+    margin-right: 10px;
+  }
+
+  /* youtube */
+  .youtube-area {
+    width: 100%;
+  }
+  #player, #ytplayer {
+    height: 300px;
+  }
+  /* event */
+  .event-item {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 599px){
+  .main-component {
+    height: 286px;
+  }
+}
+
+@media all and (max-width: 399px){
+  /* login */
+  .login-content{
+    padding: 20px;
+  }
+  .login{
+    width: 100%;
+  }
+  .btn-register{
+    width: 100%;
+  }
+}

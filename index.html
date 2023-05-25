@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
   <link rel="stylesheet" href="./css/common.css">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/media.css">
   <!-- js -->
   <script defer src="./js/main.js"></script>
 </head>
@@ -32,9 +33,9 @@
   <div class="wrapper">
     <!-- header -->
     <header class="header-component">
-      <div class="container">
+      <div class="container m-none">
         <div class="top-header">
-          <a href="javascript:void(0)" class="ticket">이용권 구매
+          <a href="./detail/ticket.html" class="ticket">이용권 구매
             <i class="material-symbols-outlined">confirmation_number</i>
           </a>
           <ul class="user-nav">
@@ -43,38 +44,237 @@
             </li>
             <li class="user-nav-item">
               <a href="javascript:void(0)">회원가입</a> | 
-              <a href="javascript:void(0)">로그인</a>
+              <a href="./user/sign-in.html">로그인</a>
             </li>
           </ul>
         </div>
         <div class="middle-header">
-          <a href="index.html">
-            <img src="./images/logo_uniz.png" class="logo" alt="유니즈 로고">
+          <a class="link" href="index.html">
+            <img src="./images/logo_uniz.png" class="logo" alt="유니즈 로고" />
           </a>
           <div class="search-box">
             <input type="text" class="search" placeholder="오늘의 유니즈 차트는?">
           </div>
         </div>
+
         <ul class="nav">
           <li class="nav-item">
             <a href="javascript:void(0)">유니즈차트</a>
+            <ul class="sub-nav">
+              <li class="sub-item">
+                <a href="javascript:void(0)">TOP 100</a>
+              </li>
+              <li class="sub-item">
+                <a href="javascript:void(0)">월간 차트</a>
+              </li>
+              <li class="sub-item">
+                <a href="javascript:void(0)">시대별 차트</a>
+              </li>
+              <li class="sub-item">
+                <a href="javascript:void(0)">장르별 차트</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="javascript:void(0)">최신음악</a>
+            <ul class="sub-nav">
+              <li class="sub-item">
+                <a href="javascript:void(0)">최신 곡</a>
+              </li>
+              <li class="sub-item">
+                <a href="javascript:void(0)">최신 앨범</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="javascript:void(0)">장르음악</a>
+            <ul class="sub-nav">
+              <li class="sub-item">
+                <a href="javascript:void(0)">KPOP</a>
+              </li>
+              <li class="sub-item">
+                <a href="javascript:void(0)">POP</a>
+              </li>
+              <li class="sub-item">
+                <a href="javascript:void(0)">JPOP</a>
+              </li>
+              <li class="sub-item">
+                <a href="javascript:void(0)">EDM</a>
+              </li>
+              <li class="sub-item">
+                <a href="javascript:void(0)">JAZZ</a>
+              </li>
+              <li class="sub-item">
+                <a href="javascript:void(0)">CLASSIC</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="javascript:void(0)">핫무비</a>
+            <ul class="sub-nav">
+              <li class="sub-item">
+                <a href="javascript:void(0)">뮤직비디오</a>
+              </li>
+              <li class="sub-item">
+                <a href="javascript:void(0)">방송</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="javascript:void(0)">매거진</a>
+            <ul class="sub-nav">
+              <li class="sub-item">
+                <a href="javascript:void(0)">스페셜</a>
+              </li>
+              <li class="sub-item">
+                <a href="javascript:void(0)">영화/전시</a>
+              </li>
+              <li class="sub-item">
+                <a href="javascript:void(0)">공연</a>
+              </li>
+              <li class="sub-item">
+                <a href="javascript:void(0)">방송</a>
+              </li>
+              <li class="sub-item">
+                <a href="javascript:void(0)">비하인드</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="javascript:void(0)">이벤트</a>
+            <ul class="sub-nav">
+              <li class="sub-item">
+                <a href="javascript:void(0)">진행중인 이벤트</a>
+              </li>
+              <li class="sub-item">
+                <a href="javascript:void(0)">완료된 이벤트</a>
+              </li>
+            </ul>
           </li>
         </ul>
+
+      </div>
+
+      <div class="mobile-header-component m">
+        <div class="mobile-header-content">
+          <a class="link" href="index.html">
+            <img src="./images/logo_uniz.png" class="logo" alt="유니즈 로고" />
+          </a>
+          
+          <div class="user-content">
+            <i class="material-symbols-outlined">search</i>
+            <i class="menu material-symbols-outlined">menu</i>
+          </div>
+        </div>
+
+        <nav class="m-nav none">
+          <div class="nav-content">
+            <div class="close">
+              <i class="material-symbols-outlined">close</i>
+            </div>
+
+            <div class="user">
+              <a href="./user/sign-up.html">회원가입</a>
+              <a href="./user/sign-in.html">로그인</a>
+            </div>
+
+          </div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a href="javascript:void(0)">유니즈차트</a>
+              <ul class="sub-nav">
+                <li class="sub-item">
+                  <a href="javascript:void(0)">TOP 100</a>
+                </li>
+                <li class="sub-item">
+                  <a href="javascript:void(0)">월간 차트</a>
+                </li>
+                <li class="sub-item">
+                  <a href="javascript:void(0)">시대별 차트</a>
+                </li>
+                <li class="sub-item">
+                  <a href="javascript:void(0)">장르별 차트</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)">최신음악</a>
+              <ul class="sub-nav">
+                <li class="sub-item">
+                  <a href="javascript:void(0)">최신 곡</a>
+                </li>
+                <li class="sub-item">
+                  <a href="javascript:void(0)">최신 앨범</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)">장르음악</a>
+              <ul class="sub-nav">
+                <li class="sub-item">
+                  <a href="javascript:void(0)">KPOP</a>
+                </li>
+                <li class="sub-item">
+                  <a href="javascript:void(0)">POP</a>
+                </li>
+                <li class="sub-item">
+                  <a href="javascript:void(0)">JPOP</a>
+                </li>
+                <li class="sub-item">
+                  <a href="javascript:void(0)">EDM</a>
+                </li>
+                <li class="sub-item">
+                  <a href="javascript:void(0)">JAZZ</a>
+                </li>
+                <li class="sub-item">
+                  <a href="javascript:void(0)">CLASSIC</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)">핫무비</a>
+              <ul class="sub-nav">
+                <li class="sub-item">
+                  <a href="javascript:void(0)">뮤직비디오</a>
+                </li>
+                <li class="sub-item">
+                  <a href="javascript:void(0)">방송</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)">매거진</a>
+              <ul class="sub-nav">
+                <li class="sub-item">
+                  <a href="javascript:void(0)">스페셜</a>
+                </li>
+                <li class="sub-item">
+                  <a href="javascript:void(0)">영화/전시</a>
+                </li>
+                <li class="sub-item">
+                  <a href="javascript:void(0)">공연</a>
+                </li>
+                <li class="sub-item">
+                  <a href="javascript:void(0)">방송</a>
+                </li>
+                <li class="sub-item">
+                  <a href="javascript:void(0)">비하인드</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="javascript:void(0)">이벤트</a>
+              <ul class="sub-nav">
+                <li class="sub-item">
+                  <a href="javascript:void(0)">진행중인 이벤트</a>
+                </li>
+                <li class="sub-item">
+                  <a href="javascript:void(0)">완료된 이벤트</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <!-- header -->
@@ -111,13 +311,305 @@
           <div class="content-header">
             <h2>최신음악</h2>
             <ul class="tab">
-              <li class="tab-item active">전체</li>
-              <li class="tab-item">국내</li>
-              <li class="tab-item">국외</li>
+              <li class="tab-item active">
+                전체
+              </li>
+              <li class="tab-item" data-tab="tab-2">국내</li>
+              <li class="tab-item" data-tab="tab-3">국외</li>
             </ul>
           </div>
           <div class="content-body">
-            <div class="tab-content">
+            <div class="tab-content active" id="tab-1">
+              <ul class="album">
+                <li class="album-item">
+                  <img src="./images/album/album_11.jpg" alt="최신 음악 지난 이맘때처럼 강버터 (Kang Butter)">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>End Of Time</p>
+                      <p>Zara Larsson</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+                <li class="album-item">
+                  <img src="./images/album/album_02.jpg" alt="최신 음악 설레나봄 노르웨이 숲 & 에이민">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>설레나봄</p>
+                      <p>노르웨이 숲 & 에이민</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+                <li class="album-item">
+                  <img src="./images/album/album_03.jpg" alt="최신 음악 금이야 옥이야 OST Part.1 은정 (Eunjung)">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>금이야 옥이야 OST Part.1</p>
+                      <p>은정 (Eunjung)</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+                <li class="album-item">
+                  <img src="./images/album/album_04.jpg" alt="최신 음악 너의 목소리가 보여 10 Part 3 국두현">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>너의 목소리가 보여 10 Part 3</p>
+                      <p>국두현</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+                <li class="album-item">
+                  <img src="./images/album/album_05.jpg" alt="최신 음악 Over The Moon 이채연">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>Over The Moon</p>
+                      <p>이채연</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+                <li class="album-item">
+                  <img src="./images/album/album_06.jpg" alt="최신 음악 잠을 깨자 uju (우주)">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>잠을 깨자</p>
+                      <p>uju (우주)</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+                <li class="album-item">
+                  <img src="./images/album/album_07.jpg" alt="최신 음악 Blank or Black 박지훈">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>Blank or Black</p>
+                      <p>박지훈</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+                <li class="album-item">
+                  <img src="./images/album/album_08.jpg" alt="최신 음악 So Bad PARCO (파르코)">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>So Bad</p>
+                      <p>PARCO (파르코)</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+                <li class="album-item">
+                  <img src="./images/album/album_09.jpg" alt="최신 음악 레몬빛 하늘 BehindtheMoon">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>레몬빛 하늘</p>
+                      <p>BehindtheMoon</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+                <li class="album-item">
+                  <img src="./images/album/album_10.jpg" alt="최신 음악 딜리버리맨 OST Various Artists">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>딜리버리맨 OST</p>
+                      <p>Various Artists</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content" id="tab-2">
+              <ul class="album">
+                <li class="album-item">
+                  <img src="./images/album/album_11.jpg" alt="최신 음악 지난 이맘때처럼 강버터 (Kang Butter)">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>End Of Time</p>
+                      <p>Zara Larsson</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+                <li class="album-item">
+                  <img src="./images/album/album_02.jpg" alt="최신 음악 설레나봄 노르웨이 숲 & 에이민">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>설레나봄</p>
+                      <p>노르웨이 숲 & 에이민</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+                <li class="album-item">
+                  <img src="./images/album/album_03.jpg" alt="최신 음악 금이야 옥이야 OST Part.1 은정 (Eunjung)">
+                  <div class="album-item-hover">
+                    <div class="album-nam">
+                      <p>금이야 옥이야 OST Part.1</p>
+                      <p>은정 (Eunjung)</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+                <li class="album-item">
+                  <img src="./images/album/album_04.jpg" alt="최신 음악 너의 목소리가 보여 10 Part 3 국두현">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>너의 목소리가 보여 10 Part 3</p>
+                      <p>국두현</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+                <li class="album-item">
+                  <img src="./images/album/album_05.jpg" alt="최신 음악 Over The Moon 이채연">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>Over The Moon</p>
+                      <p>이채연</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+                <li class="album-item">
+                  <img src="./images/album/album_06.jpg" alt="최신 음악 잠을 깨자 uju (우주)">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>잠을 깨자</p>
+                      <p>uju (우주)</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+                <li class="album-item">
+                  <img src="./images/album/album_07.jpg" alt="최신 음악 Blank or Black 박지훈">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>Blank or Black</p>
+                      <p>박지훈</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+                <li class="album-item">
+                  <img src="./images/album/album_08.jpg" alt="최신 음악 So Bad PARCO (파르코)">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>So Bad</p>
+                      <p>PARCO (파르코)</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+                <li class="album-item">
+                  <img src="./images/album/album_09.jpg" alt="최신 음악 레몬빛 하늘 BehindtheMoon">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>레몬빛 하늘</p>
+                      <p>BehindtheMoon</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+                <li class="album-item">
+                  <img src="./images/album/album_10.jpg" alt="최신 음악 딜리버리맨 OST Various Artists">
+                  <div class="album-item-hover">
+                    <div class="album-name">
+                      <p>딜리버리맨 OST</p>
+                      <p>Various Artists</p>
+                    </div>
+                    <div class="icon-group">
+                      <i class="material-symbols-outlined">play_arrow</i>
+                      <i class="material-symbols-outlined">info</i>
+                      <i class="material-symbols-outlined">add</i>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content" id="tab-3">
               <ul class="album">
                 <li class="album-item">
                   <img src="./images/album/album_01.jpg" alt="최신 음악 지난 이맘때처럼 강버터 (Kang Butter)">
@@ -262,9 +754,11 @@
           <div class="content-body">
             <ul class="chart">
               <li class="chart-item">
-                <img src="./images/album/chart_01.jpg" alt="유니즈 차트 I AM IVE (아이브)">
-                <p class="title">I AM</p>
-                <p class="artist">IVE (아이브)</p>
+                <img src="./images/album/chart_01.jpg" alt="유니즈 차트 I AM IVE (아이브)" />
+                <div class="chart-name">
+                  <p class="title">I AM</p>
+                  <p class="artist">IVE (아이브)</p>
+                </div>
                 <div class="chart-item-hover">
                   <div class="icon-group">
                     <i class="material-symbols-outlined">play_arrow</i>
@@ -274,9 +768,11 @@
                 </div>
               </li>
               <li class="chart-item">
-                <img src="./images/album/chart_02.jpg" alt="유니즈 차트 Kitsch IVE (아이브)">
-                <p class="title">Kitsch</p>
-                <p class="artist">IVE (아이브)</p>
+                <img src="./images/album/chart_02.jpg" alt="유니즈 차트 Kitsch IVE (아이브)" />
+                <div class="chart-name">
+                  <p class="title">Kitsch</p>
+                  <p class="artist">IVE (아이브)</p>
+                </div>
                 <div class="chart-item-hover">
                   <div class="icon-group">
                     <i class="material-symbols-outlined">play_arrow</i>
@@ -286,9 +782,11 @@
                 </div>
               </li>
               <li class="chart-item">
-                <img src="./images/album/chart_03.jpg" alt="유니즈 차트 꽃 지수 (JISOO))">
-                <p class="title">꽃</p>
-                <p class="artist">지수 (JISOO)</p>
+                <img src="./images/album/chart_03.jpg" alt="유니즈 차트 꽃 지수 (JISOO)" />
+                <div class="chart-name">
+                  <p class="title">꽃</p>
+                  <p class="artist">지수 (JISOO)</p>
+                </div>
                 <div class="chart-item-hover">
                   <div class="icon-group">
                     <i class="material-symbols-outlined">play_arrow</i>
@@ -298,9 +796,11 @@
                 </div>
               </li>
               <li class="chart-item">
-                <img src="./images/album/chart_04.jpg" alt="유니즈 차트 Hype boy NewJeans">
-                <p class="title">Hype boy</p>
-                <p class="artist">NewJeans</p>
+                <img src="./images/album/chart_04.jpg" alt="유니즈 차트 Hype boy NewJeans" />
+                <div class="chart-name">
+                  <p class="title">Hype boy</p>
+                  <p class="artist">NewJeans</p>
+                </div>
                 <div class="chart-item-hover">
                   <div class="icon-group">
                     <i class="material-symbols-outlined">play_arrow</i>
@@ -310,9 +810,11 @@
                 </div>
               </li>
               <li class="chart-item">
-                <img src="./images/album/chart_05.jpg" alt="유니즈 차트 	Ditto NewJeans">
-                <p class="title">Ditto</p>
-                <p class="artist">NewJeans</p>
+                <img src="./images/album/chart_05.jpg" alt="유니즈 차트 	Ditto NewJeans" />
+                <div class="chart-name">
+                  <p class="title">Ditto</p>
+                  <p class="artist">NewJeans</p>
+                </div>
                 <div class="chart-item-hover">
                   <div class="icon-group">
                     <i class="material-symbols-outlined">play_arrow</i>
@@ -322,9 +824,11 @@
                 </div>
               </li>
               <li class="chart-item">
-                <img src="./images/album/chart_06.jpg" alt="유니즈 차트 CHRISTIAN Zior Park">
-                <p class="title">CHRISTIAN</p>
-                <p class="artist">Zior Park</p>
+                <img src="./images/album/chart_06.jpg" alt="유니즈 차트 CHRISTIAN Zior Park" />
+                <div class="chart-name">
+                  <p class="title">CHRISTIAN</p>
+                  <p class="artist">Zior Park</p>
+                </div>
                 <div class="chart-item-hover">
                   <div class="icon-group">
                     <i class="material-symbols-outlined">play_arrow</i>
@@ -334,9 +838,11 @@
                 </div>
               </li>
               <li class="chart-item">
-                <img src="./images/album/chart_07.jpg" alt="유니즈 차트 사건의 지평선 Zior Park">
-                <p class="title">사건의 지평선</p>
-                <p class="artist">윤하 (YOUNHA)</p>
+                <img src="./images/album/chart_07.jpg" alt="유니즈 차트 사건의 지평선 Zior Park" />
+                <div class="chart-name">
+                  <p class="title">사건의 지평선</p>
+                  <p class="artist">윤하 (YOUNHA)</p>
+                </div>
                 <div class="chart-item-hover">
                   <div class="icon-group">
                     <i class="material-symbols-outlined">play_arrow</i>
@@ -346,9 +852,11 @@
                 </div>
               </li>
               <li class="chart-item">
-                <img src="./images/album/chart_08.jpg" alt="유니즈 차트 Teddy Bear STAYC (스테이씨)">
-                <p class="title">Teddy Bear</p>
-                <p class="artist">STAYC (스테이씨)</p>
+                <img src="./images/album/chart_08.jpg" alt="유니즈 차트 Teddy Bear STAYC (스테이씨)" />
+                <div class="chart-name">
+                  <p class="title">Teddy Bear</p>
+                  <p class="artist">STAYC (스테이씨)</p>
+                </div>
                 <div class="chart-item-hover">
                   <div class="icon-group">
                     <i class="material-symbols-outlined">play_arrow</i>
@@ -358,9 +866,11 @@
                 </div>
               </li>
               <li class="chart-item">
-                <img src="./images/album/chart_09.jpg" alt="유니즈 차트 OMG NewJeans">
-                <p class="title">OMG</p>
-                <p class="artist">NewJeans</p>
+                <img src="./images/album/chart_09.jpg" alt="유니즈 차트 OMG NewJeans" />
+                <div class="chart-name">
+                  <p class="title">OMG</p>
+                  <p class="artist">NewJeans</p>
+                </div>
                 <div class="chart-item-hover">
                   <div class="icon-group">
                     <i class="material-symbols-outlined">play_arrow</i>
@@ -370,9 +880,11 @@
                 </div>
               </li>
               <li class="chart-item">
-                <img src="./images/album/chart_10.jpg" alt="유니즈 차트 Like Crazy 지민">
-                <p class="title">Like Crazy</p>
-                <p class="artist">지민</p>
+                <img src="./images/album/chart_10.jpg" alt="유니즈 차트 Like Crazy 지민" />
+                <div class="chart-name">
+                  <p class="title">Like Crazy</p>
+                  <p class="artist">지민</p>
+                </div>
                 <div class="chart-item-hover">
                   <div class="icon-group">
                     <i class="material-symbols-outlined">play_arrow</i>
@@ -399,33 +911,28 @@
           <div class="content-body">
             <div class="youtube">
               <div class="youtube-area">
-                <!-- <div id="player"></div> -->
-                <iframe id="ytplayer" type="text/html"
-                src="https://www.youtube.com/embed/HALG3Ty52mY?controls=1&disablekb=0&enablejsapi=1&modestbranding=1&playsinline=0&showinfo=0" frameborder="0"></iframe>
+                <iframe id="ytplayer" src="https://www.youtube.com/embed/HALG3Ty52mY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <div class="movie-info">
                   <p class="artist">Jimin(지민)</p>
                   <p class="title">Like Crazy</p>
                 </div>
               </div>
               <div class="youtube-area">
-                <iframe id="ytplayer" type="text/html"
-                src="https://www.youtube.com/embed/6ZUIwj3FgUY?controls=1&disablekb=0&enablejsapi=1&modestbranding=1&playsinline=0&showinfo=0" frameborder="0"></iframe>
+                <iframe id="ytplayer" src="https://www.youtube.com/embed/3sCZKrxCWMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="movie-info">
+                  <p class="artist">이채연</p>
+                  <p class="title">KNOCK</p>
+                </div>
+              </div>
+              <div class="youtube-area">
+                <iframe id="ytplayer" src="https://www.youtube.com/embed/6ZUIwj3FgUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <div class="movie-info">
                   <p class="artist">IVE</p>
                   <p class="title">I AM</p>
                 </div>
               </div>
               <div class="youtube-area">
-                <iframe id="ytplayer" type="text/html"
-                src="https://www.youtube.com/embed/w9ueRzymcU0?controls=1&disablekb=0&enablejsapi=1&modestbranding=1&playsinline=0&showinfo=0" frameborder="0"></iframe>
-                <div class="movie-info">
-                  <p class="artist">Kep1er</p>
-                  <p class="title">Giddy</p>
-                </div>
-              </div>
-              <div class="youtube-area">
-                <iframe id="ytplayer" type="text/html"
-                src="https://www.youtube.com/embed/3sCZKrxCWMo?controls=1&disablekb=0&enablejsapi=1&modestbranding=1&playsinline=0&showinfo=0" frameborder="0"></iframe>
+                <iframe id="ytplayer" src="https://www.youtube.com/embed/SxHmoifp0oQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <div class="movie-info">
                   <p class="artist">이채연</p>
                   <p class="title">KNOCK</p>

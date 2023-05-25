@@ -128,6 +128,12 @@
   }
   .album-item-hover p:last-child {
     color: #747E7E;
+    margin: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
   /* chart */
   .chart .chart-item {
@@ -198,7 +204,8 @@
     background-color: #00CCBF;
   }
   .album{
-    width: 1400px;
+    width: calc(140px * 10);
+    height: 200px;
   }
   .album .album-item {
     margin-right: 20px;
